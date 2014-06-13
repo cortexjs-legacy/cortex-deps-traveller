@@ -1,0 +1,28 @@
+{
+  "name": "cortex-deepdep",
+  "version": "0.1.0",
+  "description": "cortex-deepdep",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/cortexjs/cortex-deepdep.git"
+  },
+  "keywords": [
+    "cortex-deepdep"
+  ],
+  "engines": { 
+    "node": ">=0.11.0"
+  },
+  "author": "cortexjs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cortexjs/cortex-deepdep/issues"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "chai": "*"
+  }
+}
