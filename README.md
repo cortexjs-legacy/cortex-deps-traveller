@@ -1,17 +1,26 @@
-# cortex-deepdep [![NPM version](https://badge.fury.io/js/cortex-deepdep.svg)](http://badge.fury.io/js/cortex-deepdep) [![Build Status](https://travis-ci.org/cortexjs/cortex-deepdep.svg?branch=master)](https://travis-ci.org/cortexjs/cortex-deepdep) [![Dependency Status](https://gemnasium.com/cortexjs/cortex-deepdep.svg)](https://gemnasium.com/cortexjs/cortex-deepdep)
+# Cortex Traveller - Travel Package Dep Tree
+ [![NPM version](https://badge.fury.io/js/cortex-traveller.svg)](http://badge.fury.io/js/cortex-traveller) [![Build Status](https://travis-ci.org/cortexjs/cortex-traveller.svg?branch=master)](https://travis-ci.org/cortexjs/cortex-traveller) [![Dependency Status](https://gemnasium.com/cortexjs/cortex-traveller.svg)](https://gemnasium.com/cortexjs/cortex-traveller)
 
 <!-- description -->
 
 ## Install
 
 ```bash
-$ npm install cortex-deepdep --save
+$ npm install cortex-traveller --save
 ```
 
 ## Usage
 
 ```js
-var cortex_deepdep = require('cortex-deepdep');
+var traveller = require('cortex-traveller')(cache_root, {
+  stabelOnly: true,
+  maxDepth: 3
+});
+
+traveller.toJSONTree(pkg, function(err, tree) {
+  
+});
+
 ```
 
 ## Licence
