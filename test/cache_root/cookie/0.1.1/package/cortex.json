@@ -1,0 +1,29 @@
+{
+  "dependencies": {},
+  "asyncDependencies": {},
+  "devDependencies": {},
+  "scripts": {},
+  "name": "cookie",
+  "description": "The best project ever.",
+  "version": "0.1.1",
+  "main": "cookie.js",
+  "homepage": "",
+  "author": {
+    "name": "mangix",
+    "email": "maqh1988@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://code.dianpingoa.com/f2e/cookie4cortex.git"
+  },
+  "licenses": [{
+    "type": "MIT",
+    "url": "/blob/master/LICENSE-MIT"
+  }],
+  "keywords": [],
+  "gitHead": "a05303ff1164c901b16e742d85e0442cdea42cbc",
+  "readme": "# cookie4cortex\n\n> The best project ever.\n\n## Getting Started\nBefore anything taking its part, you should install [node](http://nodejs.org) and \"cortex\".\n\n#### Install Node\n\nVisit [http://nodejs.org](http://nodejs.org), download and install the proper version of nodejs.\n\n#### Install Cortex\n\n    # maybe you should use `sudo`\n    npm install -g cortex\n\n## Using cookie In Your Project\n\nFirst, install 'cookie' directly with `cortex install` (recommended)\n\t\n\tcortex install cookie --save\n\t\nor, you could update your package.json manually\n    \n    dependencies: {\n        'cookie': '<version-you-want>'\n    }\n    \nand install dependencies\n\t\n\tcortex install\n    \nThen, use `require` method in your module\n    \n    var cookie = require('cookie');\n    \nFinally, start cortex server\n    \n    cortex server\n    \nThen cortex will care all the rest.\n\n\n## API Documentation\n\n\n```js\n\tvar cookie = require('cookie');\n\t//read cookie\n\tcookie('cookieName');\n\t//write cookie\n\tcookie('cookieName','cookieValue',{\n\t\texpires:1, \t\t\t\t\t// 1day \n\t\tdomain:'.dianping.com', \t//default to ''\n\t\tpath:'/', \t\t\t\t\t//default to ''\n\t\tsecure:true , \t\t\t\t//default to false\n\t});\n\t//remove cookie \n\tcookie.remove('cookieName');\n```",
+  "readmeFilename": "README.md",
+  "_id": "cookie@0.1.1",
+  "styles": []
+}

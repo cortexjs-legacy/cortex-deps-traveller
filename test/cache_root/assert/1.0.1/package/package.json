@@ -1,0 +1,33 @@
+{
+  "name": "assert",
+  "version": "1.0.1",
+  "description": "A port of 'assert' for cortex from node.js, make your node code run in browsers.",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:cortexjs/browser-assert.git"
+  },
+  "keywords": [
+    "checker"
+  ],
+  "engines": { 
+    "node": ">=0.8.0"
+  },
+  "author": "kael",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cortexjs/browser-assert/issues"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "cortex": {
+    "dependencies": {
+      "util": "~1.0.0",
+      "json": "~1.0.1"
+    }
+  }
+}

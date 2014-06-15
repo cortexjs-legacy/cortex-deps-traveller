@@ -1,0 +1,36 @@
+{
+  "dependencies": {
+    "util": "~1.0.0",
+    "json": "~1.0.1"
+  },
+  "asyncDependencies": {},
+  "devDependencies": {},
+  "scripts": {},
+  "name": "assert",
+  "version": "1.0.1",
+  "description": "A port of 'assert' for cortex from node.js, make your node code run in browsers.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:cortexjs/browser-assert.git"
+  },
+  "keywords": [
+    "checker"
+  ],
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "author": {
+    "name": "kael"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cortexjs/browser-assert/issues"
+  },
+  "gitHead": "200000ed9c4651042df850e9e47255ed071b6efd",
+  "readme": "# assert [![Build Status](https://travis-ci.org/cortexjs/browser-assert.png?branch=master)](https://travis-ci.org/cortexjs/browser-assert)\n\nA port of 'assert' for cortex from node.js, make your node code run in browsers.\n\n## Usage\n\n[Node.js Assertion Testing](http://nodejs.org/api/assert.html)",
+  "readmeFilename": "README.md",
+  "homepage": "https://github.com/cortexjs/browser-assert",
+  "_id": "assert@1.0.1",
+  "styles": []
+}
