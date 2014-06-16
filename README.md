@@ -21,17 +21,47 @@ traveller.toJSONTree(pkg, function(err, tree) {
   
 });
 
+
+// Advanced Usage, visit will travel the dep tree with BFS (which is better for performance)
+traveller.visit(pkg, {
+  enter: function(node, parent) {
+      node.pkg; // pkg info
+      node.from; // resolved from
+
+      if(parent == null) {
+        // is root node, with non-parent
+      }
+  }, leave: function(node, parent) {
+
+  }
+}, function(err) {
+  // all things is done
+  
+});
 ```
 
 ## APIs
 
-### Options
+### new Traveller(cache_root, [options])
+
+#### Options
 
 * stableOnly  _boolean_
 * maxDepth    _number_
 * enableDev   _boolean_
 * enableAsync _boolean_
 * pkgDeps     _function_
+
+### traveller.visit(pkg, Visitor, done)
+
+### traveller.toJSONTree(pkg, callback)
+
+### traveller.resolvePackage(name, range|version, callback)
+
+### traveller.resolveRange(name, range, callback)
+
+### traveller.readVersions(name, callback)
+
 
 
 ## Licence

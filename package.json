@@ -1,6 +1,6 @@
 {
   "name": "cortex-deps-traveller",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Travel dependency tree for cortex",
   "main": "index.js",
   "scripts": {
