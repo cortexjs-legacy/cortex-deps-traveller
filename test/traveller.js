@@ -31,6 +31,26 @@ describe('test traveller', function() {
   });
 
 
+  it('ignoreDev', function(done) {
+    var ignored = [];
+    var t = new Traveller(path.join(__dirname, './cache_root'), {});
+    t.toJSONTree({
+      name: "test",
+      version: "1.0.0",
+      devDependencies: {
+        "assert": "~1.0.0"
+      }
+    }, function(err, json) {
+      assert.equal(ignored.length, 1);
+      done(err);
+    });
+
+    t.on('ignoreDev', function(d) {
+      ignored.push(d);
+    });
+
+  });
+
   it('test depth', function(done) {
     var t = new Traveller(path.join(__dirname, './cache_root'), {
       depth: 1

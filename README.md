@@ -23,6 +23,17 @@ traveller.toJSONTree(pkg, function(err, tree) {
 
 ```
 
+## APIs
+
+### Options
+
+* stableOnly  _boolean_
+* maxDepth    _number_
+* enableDev   _boolean_
+* enableAsync _boolean_
+* pkgDeps     _function_
+
+
 ## Licence
 
 MIT
