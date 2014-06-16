@@ -1,5 +1,6 @@
-var Traveller = require('./lib/traveller');
+"use strict"
 
+var Traveller = require('./lib/traveller');
 
 
 module.exports = function(cache_root, options) {

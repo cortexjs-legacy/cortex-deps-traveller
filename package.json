@@ -1,6 +1,6 @@
 {
-  "name": "cortex-traveller",
-  "version": "0.1.2",
+  "name": "cortex-deps-traveller",
+  "version": "0.0.1",
   "description": "Travel dependency tree for cortex",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/cortexjs/cortex-traveller.git"
+    "url": "git://github.com/cortexjs/cortex-deps-traveller.git"
   },
   "keywords": [
     "cortex",
@@ -24,7 +24,7 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cortexjs/cortex-traveller/issues"
+    "url": "https://github.com/cortexjs/cortex-deps-traveller/issues"
   },
   "devDependencies": {
     "mocha": "*",
