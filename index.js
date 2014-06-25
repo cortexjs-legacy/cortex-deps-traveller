@@ -8,3 +8,5 @@ module.exports = function(cache_root, built_root, options) {
 };
 
 module.exports.Visitor = Traveller.Visitor;
+
+module.exports.topsort = require('./lib/sort');
