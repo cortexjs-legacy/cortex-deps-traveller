@@ -5,10 +5,11 @@ var path = require('path');
 var assert = require('chai').assert;
 var Traveller = require('../lib/traveller');
 
+var test_root = path.join(__dirname, './cache_root');
 
 describe('test traveller', function() {
   it('toJSONTree', function(done) {
-    var t = new Traveller(path.join(__dirname, './cache_root'), {});
+    var t = new Traveller(test_root, test_root);
     t.toJSONTree({
       name: 'dep-test',
       version: '1.0.0',
@@ -33,7 +34,7 @@ describe('test traveller', function() {
 
   it('ignoreDev', function(done) {
     var ignored = [];
-    var t = new Traveller(path.join(__dirname, './cache_root'), {});
+    var t = new Traveller(test_root, test_root);
     t.toJSONTree({
       name: "test",
       version: "1.0.0",
@@ -52,7 +53,7 @@ describe('test traveller', function() {
   });
 
   it('test depth', function(done) {
-    var t = new Traveller(path.join(__dirname, './cache_root'), {
+    var t = new Traveller(test_root, test_root, {
       depth: 1
     });
 

@@ -6,11 +6,11 @@ var assert = require('chai').assert;
 
 var Traveller = require('../lib/traveller');
 var sort = require('../lib/sort');
-
+var test_root = path.join(__dirname, './cache_root');
 
 describe('test sort', function() {
   it('simple tree', function(done) {
-    var t = new Traveller(path.join(__dirname, './cache_root'), {});
+    var t = new Traveller(test_root, test_root);
     t.toJSONTree({
       name: 'dep-test',
       version: '1.0.0',
@@ -34,7 +34,7 @@ describe('test sort', function() {
 
 
   it('deep tree', function(done) {
-    var t = new Traveller(path.join(__dirname, './cache_root'));
+    var t = new Traveller(test_root, test_root);
 
     t.toJSONTree({
         name: 'test-pkg',
