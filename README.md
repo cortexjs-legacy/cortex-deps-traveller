@@ -38,6 +38,9 @@ traveller.visit(pkg, {
   // all things is done
   
 });
+
+
+var Traveller = require('cortex-deps-traveller').Traveller;
 ```
 
 ## APIs
