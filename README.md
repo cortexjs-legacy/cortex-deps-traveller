@@ -46,10 +46,10 @@ traveller.visit(pkg, {
 
 #### Options
 
-* stableOnly  _boolean_
-* maxDepth    _number_
-* enableDev   _boolean_
-* enableAsync _boolean_
+* stable_only  _boolean_
+* max_depth    _number_
+* dev          _boolean_
+* asyhnc       _boolean_
 * pkgDeps     _function_
 
 
