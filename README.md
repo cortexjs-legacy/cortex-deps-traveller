@@ -1,18 +1,18 @@
-# Cortex Traveller - Travel Package Dep Tree
- [![NPM version](https://badge.fury.io/js/cortex-traveller.svg)](http://badge.fury.io/js/cortex-traveller) [![Build Status](https://travis-ci.org/cortexjs/cortex-traveller.svg?branch=master)](https://travis-ci.org/cortexjs/cortex-traveller) [![Dependency Status](https://gemnasium.com/cortexjs/cortex-traveller.svg)](https://gemnasium.com/cortexjs/cortex-traveller)
+# Cortex Deps Traveller - Travel Package Dep Tree
+ [![NPM version](https://badge.fury.io/js/cortex-deps-traveller.svg)](http://badge.fury.io/js/cortex-deps-traveller) [![Build Status](https://travis-ci.org/cortexjs/cortex-deps-traveller.svg?branch=master)](https://travis-ci.org/cortexjs/cortex-deps-traveller) [![Dependency Status](https://gemnasium.com/cortexjs/cortex-deps-traveller.svg)](https://gemnasium.com/cortexjs/cortex-deps-traveller)
 
-<!-- description -->
+Traveling cortex packages through dependencies tree.
 
 ## Install
 
 ```bash
-$ npm install cortex-traveller --save
+$ npm install cortex-deps-traveller --save
 ```
 
 ## Usage
 
 ```js
-var traveller = require('cortex-traveller')(cache_root, {
+var traveller = require('cortex-deps-traveller')(cache_root, built_root, {
   stabelOnly: true,
   maxDepth: 3
 });
@@ -42,7 +42,7 @@ traveller.visit(pkg, {
 
 ## APIs
 
-### new Traveller(cache_root, [options])
+### new Traveller(cache_root, built_root, [options])
 
 #### Options
 
@@ -111,7 +111,6 @@ traveller.readVersions(name, function(err, versions) {
 
 * name {string} package name
 * callback {function}
-
 
 
 
