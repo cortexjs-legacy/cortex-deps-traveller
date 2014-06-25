@@ -113,6 +113,7 @@ traveller.readVersions(name, function(err, versions) {
 * callback {function}
 
 
+### module.exports.topsort(root, [name])
 
 
 ## Licence
