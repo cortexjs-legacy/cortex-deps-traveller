@@ -12,7 +12,7 @@ $ npm install cortex-deps-traveller --save
 ## Usage
 
 ```js
-var traveller = require('cortex-deps-traveller')(cache_root, built_root, {
+var traveller = require('cortex-deps-traveller')(built_root, {
   stabelOnly: true,
   maxDepth: 3
 });
@@ -45,7 +45,7 @@ var Traveller = require('cortex-deps-traveller').Traveller;
 
 ## APIs
 
-### new Traveller(cache_root, built_root, [options])
+### new Traveller(built_root, [options])
 
 #### Options
 
