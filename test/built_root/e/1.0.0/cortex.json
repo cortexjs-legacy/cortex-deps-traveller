@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "c": "~1.0.0",
+    "f": "^1.0.0"
+  },
+  "asyncDependencies": {},
+  "devDependencies": {},
+  "scripts": {},
+  "name": "e",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "license": "MIT",
+  "readme": "# e",
+  "readmeFilename": "README.md",
+  "_id": "e@1.0.0",
+  "styles": []
+}

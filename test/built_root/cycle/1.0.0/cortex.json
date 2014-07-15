@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "cycle": "~1.0.0"
+  },
+  "asyncDependencies": {},
+  "devDependencies": {},
+  "scripts": {},
+  "name": "cycle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "license": "MIT",
+  "readme": "# cycle",
+  "readmeFilename": "README.md",
+  "_id": "cycle@1.0.0",
+  "styles": []
+}
