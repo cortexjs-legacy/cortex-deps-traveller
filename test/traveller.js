@@ -79,6 +79,5 @@ describe('test traveller', function() {
         assert(!json.dependencies['dep-test'].dependencies);
         done(err);
       });
-
   });
 });

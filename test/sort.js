@@ -61,50 +61,55 @@ describe('test sort', function() {
   });
 
 
-  it('cylce detect', function() {
-    assert.
-    throw (function() {
-      sort({
-        name: 'a',
-        version: '1.0.0',
-        dependencies: {
-          'b': {
-            version: '0.0.1'
-          },
-          'c': {
-            version: '0.1.0',
-            dependencies: {
-              a: {
-                version: '1.0.0'
-              }
+  it('cylce sort', function() {
+    var sorted = sort({
+      name: 'a',
+      version: '1.0.0',
+      dependencies: {
+        'b': {
+          version: '0.0.1'
+        },
+        'c': {
+          version: '0.1.0',
+          dependencies: {
+            a: {
+              version: '1.0.0'
             }
           }
         }
-      });
-    }, 'Cycle detected');
+      }
+    });
+
+    assert.equal(sorted.length, 3);
+    assert.equal(sorted[0], 'a@1.0.0');
+    assert.equal(sorted[1], 'b@0.0.1');
+    assert.equal(sorted[2], 'c@0.1.0');
 
 
-    assert.
-    throw (function() {
-      sort({
-        name: 'a',
-        version: '1.0.0',
-        dependencies: {
-          'b': {
-            version: '0.0.1',
-            dependencies: {
-              'c': {
-                version: '0.1.0',
-                dependencies: {
-                  b: {
-                    version: '0.0.1'
-                  }
+    sorted = sort({
+      name: 'a',
+      version: '1.0.0',
+      dependencies: {
+        'b': {
+          version: '0.0.1',
+          dependencies: {
+            'c': {
+              version: '0.1.0',
+              dependencies: {
+                b: {
+                  version: '0.0.1'
                 }
               }
             }
           }
         }
-      });
-    }, 'Cycle detected');
+      }
+    });
+
+    assert.equal(sorted.length, 3);
+    assert.equal(sorted[0], 'a@1.0.0');
+    assert.equal(sorted[1], 'b@0.0.1');
+    assert.equal(sorted[2], 'c@0.1.0');
+
   });
 });
