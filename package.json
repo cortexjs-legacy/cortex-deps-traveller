@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "./node_modules/.bin/jshint test/*.js lib/*.js index.js package.json",
-    "test": "npm run lint & ./node_modules/.bin/mocha -R spec test"
+    "test": "npm run lint && ./node_modules/.bin/mocha -R spec test"
   },
   "repository": {
     "type": "git",
