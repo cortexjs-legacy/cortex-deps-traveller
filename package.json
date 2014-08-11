@@ -1,6 +1,6 @@
 {
   "name": "cortex-deps-traveller",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Travel dependency tree for cortex",
   "main": "index.js",
   "scripts": {
@@ -33,7 +33,7 @@
   },
   "dependencies": {
     "async": "^0.9.0",
-    "semver": "~2.3.0",
+    "semver": "^3.0.0",
     "sorted-object": "^1.0.0"
   }
 }
