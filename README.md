@@ -13,7 +13,6 @@ $ npm install cortex-deps-traveller --save
 
 ```js
 var traveller = require('cortex-deps-traveller')(built_root, {
-  stabelOnly: true,
   maxDepth: 3
 });
 
@@ -49,11 +48,10 @@ var Traveller = require('cortex-deps-traveller').Traveller;
 
 #### Options
 
-* stable_only  _boolean_
 * max_depth    _number_
 * dev          _boolean_
-* asyhnc       _boolean_
-* pkgDeps     _function_
+* async        _boolean_
+* pkgDeps      _function_
 
 
 ### traveller.toJSONTree(pkg, callback)
