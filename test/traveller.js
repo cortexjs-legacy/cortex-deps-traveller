@@ -32,6 +32,25 @@ describe('test traveller', function() {
   });
 
 
+  it('prelease', function(done) {
+    var t = new Traveller(test_root);
+    t.toJSONTree({
+      name: 'dep-test',
+      version: "1.0.0",
+      dependencies: {
+        "neuron": "^5.0.2"
+      }
+    }, function(err, json) {
+      assert.equal(json.name, 'dep-test');
+      assert.equal(json.version, '1.0.0');
+      assert(json.dependencies.neuron);
+      assert.equal(json.dependencies.neuron.from, "neuron@^5.0.2");
+      assert.equal(json.dependencies.neuron.version, "5.1.0-beta");
+      done(err);
+    });
+  });
+
+
   it('ignoreDev', function(done) {
     var ignored = [];
     var t = new Traveller(test_root);

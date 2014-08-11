@@ -11,7 +11,7 @@
   "asyncDependencies": {},
   "devDependencies": {},
   "name": "neuron",
-  "version": "5.1.0",
+  "version": "5.1.0-beta",
   "description": "Neuron is a very simple [CommonJS](http://wiki.commonjs.org) module loader.",
   "main": "dist/neuron",
   "repository": {
@@ -36,6 +36,5 @@
     "url": "https://github.com/kaelzhang/neuron/issues"
   },
   "homepage": "https://github.com/kaelzhang/neuron",
-  "_id": "neuron@5.1.0",
   "styles": []
 }

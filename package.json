@@ -1,10 +1,11 @@
 {
   "name": "cortex-deps-traveller",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Travel dependency tree for cortex",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha -R spec test"
+    "lint": "./node_modules/.bin/jshint test/*.js lib/*.js index.js package.json",
+    "test": "npm run lint & ./node_modules/.bin/mocha -R spec test"
   },
   "repository": {
     "type": "git",
@@ -31,8 +32,8 @@
     "chai": "~1.9.1"
   },
   "dependencies": {
+    "async": "^0.9.0",
     "semver": "~2.3.0",
-    "sorted-object": "~1.0.0",
-    "async": "~0.9.0"
+    "sorted-object": "^1.0.0"
   }
 }
